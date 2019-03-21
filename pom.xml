@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>be.biertho.common</groupId>
+	<artifactId>common</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>common</name>
+	
+
+    <properties>
+        <finalFileName>${project.parent.artifactId}</finalFileName>
+    </properties>
+
+	<parent>
+	    <groupId>be.biertho.parent</groupId>
+	    <artifactId>parent-bom</artifactId>
+	    <version>1.0.1</version>
+	</parent>
+
+	<ciManagement>
+		
+	</ciManagement>
+
+	<distributionManagement>
+		
+	</distributionManagement>
+
+	<dependencies>
+		<!-- Local Libraries -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
+		<!--  JBoss Libraries -->
+		<dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+
+		<!-- Test Libraies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+  			<version>1.6.2</version>
+		</dependency>		
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+		    <groupId>com.sun.activation</groupId>
+		    <artifactId>javax.activation</artifactId>
+		    <version>1.2.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.ejb</groupId>
+		    <artifactId>javax.ejb-api</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>javax.interceptor</groupId>
+		    <artifactId>javax.interceptor-api</artifactId>
+		</dependency>
+		<dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
+          <dependency>
+            <groupId>nl.jqno.equalsverifier</groupId>
+            <artifactId>equalsverifier</artifactId>
+            <version>2.2.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.assertj</groupId>
+          <artifactId>assertj-core</artifactId>
+          <version>2.8.0</version>
+          <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.9.5</version>
+            <scope>test</scope>
+        </dependency>
+       
+        </dependencies>
+    </dependencyManagement>
+</project>
